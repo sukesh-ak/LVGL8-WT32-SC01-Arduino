@@ -1,5 +1,8 @@
-# Sample to illustrate graphics & touch using the following library
+# Graphics & touch on WT32-SC01
 
+![device](device.png)
+
+ 
 - Board : WT32-SC01 from Wireless Tag (Seeed Studio also carries the same)
 - Graphics & Touch Driver : [LovyanGFX](https://github.com/lovyan03/LovyanGFX)
 - UI/Widgets : LVGL8.x (work in progress)
