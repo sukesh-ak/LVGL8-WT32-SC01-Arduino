@@ -1,11 +1,11 @@
-# Graphics & touch on WT32-SC01
+# Graphics & Touch on WT32-SC01
 
 ![device](device.png)
 
  
 - Board : WT32-SC01 from Wireless Tag (Seeed Studio also carries the same)
 - Graphics & Touch Driver : [LovyanGFX](https://github.com/lovyan03/LovyanGFX)
-- UI/Widgets : LVGL8.x (work in progress)
+- UI/Widgets : LVGL8.x 
 
 ## WT32-SC01 Specs  
 #### Pros:  
@@ -19,7 +19,7 @@
 
 #### Cons:
 - No SD Card storage option
-- 16MB Flash version available but only through Alibaba (didn't know when I ordered)
+- [16MB Flash version](https://www.alibaba.com/product-detail/esp32-development-board-WT32-SC01-3_62534911683.html) available but only through Alibaba (didn't know when I ordered)
 - Pin headers are 2mm pitch which is not the common standard (2.54mm is common).
 - Mounting holes in the wrong place so you cannot use it (fixed in newer revisions)
 
@@ -40,9 +40,9 @@
     - I2C_TOUCH_FREQUENCY=400000
     - I2C_TOUCH_ADDRESS=0x38
 
-## Touch and Draw sample
+## Touch and Draw sample (without LVGL)
 Replace the content of main.cpp with the following to test quickly  
-For 'Ardiuno IDE', install LovyanGFX library then copy & paste the below code and flash!
+For 'Ardiuno IDE', install LovyanGFX library then copy & paste the below code into your .ino file and flash!
 ``` C++
 
 /*
@@ -79,3 +79,6 @@ void loop()
 }
 
 ```
+
+## 3D Printable enclosure (STL)  
+[3D enclosure on SketchFab website](https://sketchfab.com/3d-models/wt32-sc01-case-cfec05638de540b0acccff2091508500)
