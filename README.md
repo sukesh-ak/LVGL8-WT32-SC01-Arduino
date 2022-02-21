@@ -7,6 +7,9 @@
 - Graphics & Touch Driver : [LovyanGFX](https://github.com/lovyan03/LovyanGFX)
 - UI/Widgets : LVGL8.x 
 
+## Demo code output
+![device](SampleUI.jpg)
+
 ## WT32-SC01 Specs  
 #### Pros:  
 - 3.5" 480x320 ST7796S TFT Display
