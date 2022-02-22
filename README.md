@@ -3,9 +3,11 @@
 ![device](device.png)
 
  
-- Board : WT32-SC01 from Wireless Tag (Seeed Studio also carries the same)
+- Board : WT32-SC01 from Wireless Tag (Seeed Studio also carries the same)  
+  Similiar display from DFRobot uses ILI9488
 - Graphics & Touch Driver : [LovyanGFX](https://github.com/lovyan03/LovyanGFX)
-- UI/Widgets : LVGL8.x 
+- UI/Widgets : [LVGL8.x](https://github.com/lvgl/lvgl)
+- Framework : Arduino + PlatformIO
 
 ## Demo code output
 ![device](SampleUI.jpg)
@@ -18,13 +20,13 @@
 - Default 4MB Flash & 8MB PSRAM
 - Two external expansion female pin headers with same pin-out (mirrored)
 - 2 x 3.3v LDO, 1 for the board and 1 for the external expansion
-- Separate Battery/External power option with voltage range 5v-9v (5)
+- Separate Battery/External power option with voltage range 5v-9v
 - USB-C for power and programming
 
 #### Cons:
 - No SD Card storage option
 - [16MB Flash version](https://www.alibaba.com/product-detail/esp32-development-board-WT32-SC01-3_62534911683.html) available but only through Alibaba (didn't know when I ordered)
-- Pin headers are 2mm pitch which is not the common standard (2.54mm is common).
+- Pin headers are 2mm pitch which is not breadboard standard (2.54mm is common).
 - Mounting holes in the wrong place so you cannot use it (fixed in newer revisions)
 
 ## Board config
@@ -39,14 +41,11 @@
 - Touch	(FT6336U)
     - TOUCH_SDA=18
     - TOUCH_SCL=19
-    - TOUCH_IRQ=-1   ; not connected
-    - TOUCH_RST=-1   ; not used, connected to 3.3V
-    - I2C_TOUCH_FREQUENCY=400000
     - I2C_TOUCH_ADDRESS=0x38
 
 ## Touch and Draw sample (without LVGL)
 Replace the content of main.cpp with the following to test quickly  
-For 'Ardiuno IDE', install LovyanGFX library then copy & paste the below code into your .ino file and flash!
+For `Ardiuno IDE`, install LovyanGFX library then copy & paste the below code into your .ino file and flash!
 ``` C++
 
 /*
