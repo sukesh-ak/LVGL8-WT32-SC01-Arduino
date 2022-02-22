@@ -4,7 +4,7 @@
 
  
 - Board : WT32-SC01 from Wireless Tag (Seeed Studio also carries the same)  
-  Similiar display from DFRobot uses ILI9488
+  Similiar display from DFRobot uses ILI9488 (not ST7796S)
 - Graphics & Touch Driver : [LovyanGFX](https://github.com/lovyan03/LovyanGFX)
 - UI/Widgets : [LVGL8.x](https://github.com/lvgl/lvgl)
 - Framework : Arduino + PlatformIO
@@ -63,13 +63,13 @@ static int32_t x,y;
 
 void setup(void)
 {
-	lcd.init();
+  lcd.init();
 
-	// Setting display to landscape
-	if (lcd.width() < lcd.height()) lcd.setRotation(lcd.getRotation() ^ 1);
+  // Setting display to landscape
+  if (lcd.width() < lcd.height()) lcd.setRotation(lcd.getRotation() ^ 1);
 
-    lcd.setCursor(0,0);
-    lcd.printf("Ready to touch & draw!");
+  lcd.setCursor(0,0);
+  lcd.printf("Ready to touch & draw!");
 }
 
 void loop()
