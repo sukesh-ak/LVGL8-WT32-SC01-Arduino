@@ -12,6 +12,7 @@
 
 ## WT32-SC01 Specs  
 #### Pros:  
+- ESP32 WROVER-B
 - 3.5" 480x320 ST7796S TFT Display
 - Capacitive touchscreen FT6336U
 - Default 4MB Flash & 8MB PSRAM
