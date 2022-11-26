@@ -82,7 +82,7 @@ void loop()
     lcd.fillRect(x - 2, y - 2, 5, 5, TFT_RED);
     lcd.setCursor(380, 0);
     lcd.printf("Touch:(%03d,%03d)", x, y);
-    // }
+  }
 #endif
   }
 
