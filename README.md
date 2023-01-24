@@ -1,3 +1,6 @@
+# Latest project with multiple device support is here
+https://github.com/sukesh-ak/ESP32-TUX
+
 # Graphics & Touch on WT32-SC01
 
 ![device](device.png)
