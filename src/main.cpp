@@ -82,9 +82,9 @@ void loop()
     lcd.fillRect(x - 2, y - 2, 5, 5, TFT_RED);
     lcd.setCursor(380, 0);
     lcd.printf("Touch:(%03d,%03d)", x, y);
-    // }
-#endif
   }
+#endif
+}
 
   /*** Display callback to flush the buffer to screen ***/
   void display_flush(lv_disp_drv_t * disp, const lv_area_t *area, lv_color_t *color_p)
